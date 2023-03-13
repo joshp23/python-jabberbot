@@ -463,7 +463,7 @@ class JabberBot(object):
                     "<body xmlns='http://www.w3.org/1999/xhtml'>" + \
                     text.encode('utf-8') + "</body>"))
                 message.addChild(node=html)
-            except Exception, e:
+            except Exception as e:
                 # Didn't work, incorrect markup or something.
                 self.log.debug('An error while building a xhtml message. '\
                 'Fallback to normal messagebody')
@@ -551,7 +551,7 @@ class JabberBot(object):
         except KeyError, e:
             # User not on our roster
             subscription = None
-        except AttributeError, e:
+        except AttributeError as e:
             # Recieved presence update before roster built
             return
 
@@ -654,7 +654,7 @@ class JabberBot(object):
             def execute_and_send():
                 try:
                     reply = self.commands[cmd](mess, args)
-                except Exception, e:
+                except Exception as e:
                     self.log.exception('An error happened while processing '\
                         'a message ("%s") from %s: %s"' %
                         (text, jid, traceback.format_exc(e)))
@@ -770,7 +770,7 @@ class JabberBot(object):
                 #logging.debug('Got response: ' + str(res))
                 if res is None:
                     self.on_ping_timeout()
-            except IOError, e:
+            except IOError as e:
                 logging.error('Error pinging the server: %s, '\
                     'treating as ping timeout.' % e)
                 self.on_ping_timeout()
