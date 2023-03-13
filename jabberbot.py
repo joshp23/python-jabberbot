@@ -727,7 +727,7 @@ class JabberBot(object):
             usage = '\n'.join(sorted([
                 '%s: %s' % (name, (command.__doc__ or \
                     '(undocumented)').strip().split('\n', 1)[0])
-                for (name, command) in self.commands.iteritems() \
+                for (name, command) in self.commands.items() \
                     if name != (self.__command_prefix + 'help') \
                     and not command._jabberbot_command_hidden
             ]))
