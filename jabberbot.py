@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
 # JabberBot: A simple jabber/xmpp bot framework
@@ -18,6 +18,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
+# Ported poorly to python3 by Josh Panter <joshu@unfettered.net> 2023
 
 """
 A framework for writing Jabber/XMPP bots and services
@@ -31,7 +32,7 @@ bot's operation completely. MUCs are also supported.
 import os
 import re
 import sys
-import thread
+import _thread
 
 try:
     import xmpp
@@ -49,7 +50,7 @@ import traceback
 
 # Will be parsed by setup.py to determine package metadata
 __author__ = 'Thomas Perl <m@thp.io>'
-__version__ = '0.16'
+__version__ = '1.0.0'
 __website__ = 'http://thp.io/2007/python-jabberbot/'
 __license__ = 'GNU General Public License version 3 or later'
 
