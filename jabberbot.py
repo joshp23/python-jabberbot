@@ -18,7 +18,6 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-# Ported poorly to python3 by Josh Panter <joshu@unfettered.net> 2023
 
 """
 A framework for writing Jabber/XMPP bots and services
