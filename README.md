@@ -6,7 +6,7 @@ This is a fork of [python-jabberbot](http://thp.io/2007/python-jabberbot/) to py
 
 ## Simple usage
 1. pip install xmpppy
-2. Place `jaberbot.py` in the same folder as your bot
+2. Place `jabberbot.py` in the same folder as your bot
 3. use `import from jabberbot *`
 4. see examples for inspiration
 
