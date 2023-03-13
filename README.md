@@ -4,7 +4,13 @@ A framework for writing IM/chat robots for the Jabber / XMPP protocol.
 
 This is a fork of [python-jabberbot](http://thp.io/2007/python-jabberbot/) to python 3
 
-## TODO
+## Simple usage
+1. pip install xmpppy
+2. Place `jaberbot.py` in the same folder as your bot
+3. use `import from jabberbot *`
+4. see examples for inspiration
+
+## TODO (imported)
 1. fix acceptownmsgs
     - based on bareJID/fullJID
     - based on Nickname in MUC
