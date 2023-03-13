@@ -14,7 +14,7 @@ Respect MUC statuscodes
 
 Behavior of prefix
 - Different behavior for direct/groupchat messages
-- - no prefix for direct messages
+    - no prefix for direct messages
 - (none/default-prefix) in constructor / muc-specific-prefix (in muc_join_room)
 
 React on error-stanzas
