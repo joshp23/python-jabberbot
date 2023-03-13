@@ -14,32 +14,24 @@ This is a fork of [python-jabberbot](http://thp.io/2007/python-jabberbot/) to py
 1. fix acceptownmsgs
     - based on bareJID/fullJID
     - based on Nickname in MUC
-
 2. Admin-only-commands
-
 3. React on MUC-invitations
-- Parameter in constructor (invitable=False)
-
+    - Parameter in constructor (invitable=False)
 4. Respect MUC statuscodes
-
 5. Behavior of prefix
-- Different behavior for direct/groupchat messages
-    - no prefix for direct messages
-- (none/default-prefix) in constructor / muc-specific-prefix (in muc_join_room)
-
+    - Different behavior for direct/groupchat messages
+        - no prefix for direct messages
+    - (none/default-prefix) in constructor / muc-specific-prefix (in muc_join_room)
 6. React on error-stanzas
-- Nickname already chosen
-- Kick/Ban/Invite/etc. not allowed
-
+    - Nickname already chosen
+    - Kick/Ban/Invite/etc. not allowed
 7. Clean up code
-- sort functions related to XEPs
-
+    - sort functions related to XEPs
 8. Using transports
-- icq msn irc
-
+    - icq msn irc
 9. Documentation
-- First steps
-- PyDocs
+    - First steps
+    - PyDocs
 
 ## Authors
 Thomas Perl <m@thp.io>  
